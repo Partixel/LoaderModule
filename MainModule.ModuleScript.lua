@@ -70,8 +70,8 @@ local function HandleTemp(ModName, Config, PermPar, Allow_Force_Singular, Overri
 	end
 end
 
-return function (ModName, Config)
-	return function (Folder, PermPar, Allow_Force_Singular, Overrides)
+return function(ModName, Config)
+	return function(Folder, PermPar, Allow_Force_Singular, Overrides)
 		if not PermPar then
 			if Folder.Name == "StarterPlayerScripts" or Folder.Name == "StarterCharacterScripts" then
 				PermPar = game:GetService("StarterPlayer"):WaitForChild(Folder.Name)
